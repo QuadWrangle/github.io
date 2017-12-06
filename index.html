@@ -336,7 +336,15 @@
 <p>Bulk load multiple people records into the system. </p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>POST /people/load?key=&lt;API KEY&gt;&amp;appClientId=&lt;CLIENT ID&gt;</code></p>
-<h2 id='insert-a-single-record'>Insert a Single Record</h2><h2 id='update-a-single-record'>Update a Single Record</h2><h2 id='get-all-changes'>Get All Changes</h2><h2 id='get-a-single-change-set'>Get a Single Change Set</h2><h1 id='events'>Events</h1><h2 id='bulk-load-2'>Bulk Load</h2><h2 id='insert-a-single-event'>Insert a Single Event</h2><h2 id='update-a-single-event'>Update a Single Event</h2><h2 id='fetch-rsvps-for-an-event'>Fetch RSVPs for an Event</h2><h2 id='fetch-check-ins-for-an-event'>Fetch Check-ins for an Event</h2><h2 id='fetch-ticket-sales-for-an-event'>Fetch Ticket Sales for an Event</h2><h1 id='news'>News</h1><h2 id='bulk-load-3'>Bulk Load</h2><h2 id='insert-a-single-news-item'>Insert a Single News Item</h2><h2 id='update-a-single-news-item'>Update a Single News Item</h2><h1 id='isaac'>Isaac</h1>
+<h2 id='insert-a-single-record'>Insert a Single Record</h2>
+<p><code>POST /people?key=&lt;API KEY&gt;&amp;appClientId=&lt;CLIENT ID&gt;</code></p>
+<h2 id='update-a-single-record'>Update a Single Record</h2>
+<p><code>PUT /people?key=&lt;API KEY&gt;&amp;appClientId=&lt;CLIENT ID&gt;</code></p>
+<h2 id='get-all-changes'>Get All Changes</h2>
+<p><code>GET /people/changes?key=&lt;API KEY&gt;&amp;appClientId=&lt;CLIENT ID&gt;</code></p>
+<h2 id='get-a-single-change-set'>Get a Single Change Set</h2>
+<p><code>GET /people/changes/{recordId}?key=&lt;API KEY&gt;&amp;appClientId&lt;CLIENT ID&gt;</code></p>
+<h1 id='events'>Events</h1><h2 id='bulk-load-2'>Bulk Load</h2><h2 id='insert-a-single-event'>Insert a Single Event</h2><h2 id='update-a-single-event'>Update a Single Event</h2><h2 id='fetch-rsvps-for-an-event'>Fetch RSVPs for an Event</h2><h2 id='fetch-check-ins-for-an-event'>Fetch Check-ins for an Event</h2><h2 id='fetch-ticket-sales-for-an-event'>Fetch Ticket Sales for an Event</h2><h1 id='news'>News</h1><h2 id='bulk-load-3'>Bulk Load</h2><h2 id='insert-a-single-news-item'>Insert a Single News Item</h2><h2 id='update-a-single-news-item'>Update a Single News Item</h2><h1 id='isaac'>Isaac</h1>
 <p>You may use certain Isaac functions to fetch feeds for a given set of constituents. The input is essentially a search query and the result is the curated feed Isaac has created for these people. </p>
 
 <p>There is a limit built in that limits the search query to active users only (those users who have logged in to the platform)</p>
